@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JS Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="progress-bar-container">
+            <div id="progress-fill"></div>
+        </div>
+        
+        <header>
+            <h1> Quiz </h1>
+            <div id="timer">Time Left: <span id="seconds">15</span>s</div>
+        </header>
+
+        <main id="quiz-section" class="fade-in">
+            <h2 id="question">Loading...</h2>
+            <div id="options-container"></div>
+        </main>
+
+        <div class="action-area">
+            <button id="submit-btn" disabled>Lock Answer</button>
+        </div>
+
+        <footer>
+            <p>Score: <span id="score-val">0</span></p>
+        </footer>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
